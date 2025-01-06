@@ -62,6 +62,7 @@ const enclave = new Enclave(API_KEY);
 
 3. **Implement Login** - Handle user authentication:
 ```typescript:pages/index.tsx
+import { useLogin } from "@privy-io/react-auth";
 export default function LoginPage() {
   const router = useRouter();
   const { login } = useLogin({
